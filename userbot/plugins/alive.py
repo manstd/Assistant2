@@ -48,6 +48,7 @@ async def amireallyalive(yes):
     chat = await yes.get_chat()
     global ghanti
     ghanti = borg.uid
+##
     on = await borg.send_file(yes.chat_id, file=file1,caption=pm_caption)
 
     await asyncio.sleep(edit_time)
@@ -72,6 +73,8 @@ async def amireallyalive(yes):
     ok7 = await borg.edit_message(yes.chat_id, ok6, file=file4)
 
     await yes.delete()
+
+""" For .alive command, check if the bot is running.  """
     
     
 
